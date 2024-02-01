@@ -1,0 +1,9 @@
+{% extends 'booking/base.html' %}
+
+{% block content %}
+
+<h1>Réservation réalisée le {{ object.reservation_date }}</h1>
+
+<p>Adresse de départ : {{object.start_address }} </br> Adresse de destination : {{ object.dest_address }} </br>Durée estimée du trajet : {{ object.duration }} </br>ID car : {{ object.car }}</p>
+
+{% endblock %}
